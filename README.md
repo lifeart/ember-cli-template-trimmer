@@ -40,6 +40,20 @@ Bonus:
 {{/if}}
 ```
 
+Stats fom one of my projects (gzipped results):
+
+
+`template-trimmer`: 150.42 `->` 144.92 `kb` \
+`ember-hbs-minifier`: 150.42 `->` 144.96 `kb` \
+`template-trimmer` + `ember-hbs-minifier`: 150.42 `->` 144.71 `kb`
+
+---
+
+Can I use it with [ember-hbs-minifier](https://github.com/simplabs/ember-hbs-minifier)? 
+- Yes
+
+---
+
 Compatibility
 ------------------------------------------------------------------------------
 
