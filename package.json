@@ -1,13 +1,13 @@
 {
-  "name": "ember-cli-template-newline-trimmer",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "name": "ember-cli-template-trimmer",
+  "version": "0.0.1",
+  "description": "Ember templates trimmer (optimize opcodes count for glimmer-vm)",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://github.com/lifeart/ember-cli-template-trimmer.git",
   "license": "MIT",
-  "author": "",
+  "author": "Aleksandr Kanunnikov <lifeart92@gmail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -17,11 +17,16 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "ember test",
-    "test:all": "ember try:each"
+    "test:ember": "ember test",
+    "test:all": "ember try:each",
+    "test": "jest --no-watchman"
   },
   "dependencies": {
-    "ember-cli-babel": "^7.7.3"
+    "@glimmer/compiler": "^0.41.1",
+    "@glimmer/syntax": "^0.41.1",
+    "calculate-cache-key-for-tree": "^2.0.0",
+    "ember-cli-babel": "*",
+    "jest": "^24.8.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.7.0",

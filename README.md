@@ -1,8 +1,37 @@
-ember-cli-template-newline-trimmer
+ember-cli-template-trimmer
 ==============================================================================
 
-[Short description of the addon.]
+This addon removes newlines on compile stage, for cases like this:
 
+```hbs
+<div>
+  <div>
+    <div>
+      <div></div>
+    </div>
+  </div>
+</div>
+```
+to this:
+```hbs
+<div><div><div><div></div></div></div></div>
+
+```
+* text nodes inside `<pre>`, `<code>` will skipped.
+
+
+
+why?
+
+this reduces `glimmer-vm` opcodes count, and reduce memory usage, and increase final rendering/rerendering speed.
+
+Bonus:
+
+```hbs
+{{#if false}}
+    this dead block will be removed at all 
+{{/if}}
+``
 
 Compatibility
 ------------------------------------------------------------------------------
@@ -16,7 +45,7 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install ember-cli-template-newline-trimmer
+ember install ember-cli-template-trimmer
 ```
 
 

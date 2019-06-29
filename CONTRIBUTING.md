@@ -3,7 +3,7 @@
 ## Installation
 
 * `git clone <repository-url>`
-* `cd ember-cli-template-newline-trimmer`
+* `cd ember-cli-template-trimmer`
 * `npm install`
 
 ## Linting
