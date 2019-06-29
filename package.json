@@ -22,11 +22,8 @@
     "test": "jest --no-watchman"
   },
   "dependencies": {
-    "@glimmer/compiler": "^0.41.1",
-    "@glimmer/syntax": "^0.41.1",
     "calculate-cache-key-for-tree": "^2.0.0",
-    "ember-cli-babel": "*",
-    "jest": "^24.8.0"
+    "ember-cli-babel": "*"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.7.0",
@@ -45,6 +42,9 @@
     "ember-load-initializers": "^2.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-qunit": "^4.4.1",
+    "jest": "^24.8.0",
+    "@glimmer/compiler": "^0.41.1",
+    "@glimmer/syntax": "^0.41.1",
     "ember-resolver": "^5.0.1",
     "ember-source": "~3.10.0",
     "ember-source-channel-url": "^1.1.0",
