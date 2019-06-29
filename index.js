@@ -14,7 +14,7 @@ module.exports = {
       params: {},
     };
 
-    registry.add('template-timmer-ast-plugin', pluginObj);
+    registry.add('htmlbars-ast-plugin', pluginObj);
   },
 
   _buildPlugin() {
