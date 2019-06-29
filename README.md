@@ -15,15 +15,22 @@ This addon removes newlines on compile stage, for cases like this:
 to this:
 ```hbs
 <div><div><div><div></div></div></div></div>
-
 ```
-* text nodes inside `<pre>`, `<code>` will skipped.
+\* any text nodes inside `<pre>`, `<code>` will be saved.
 
+\** single space nodes will be saved.
 
+\** text nodes having text + (newlines || spaces) will be saved
 
-why?
+---
 
-this reduces `glimmer-vm` opcodes count, and reduce memory usage, and increase final rendering/rerendering speed.
+# why?
+
+---
+
+this reduces `glimmer-vm` opcodes count, memory usage, and increase final rendering/rerendering speed.
+
+---
 
 Bonus:
 
@@ -31,7 +38,7 @@ Bonus:
 {{#if false}}
     this dead block will be removed at all 
 {{/if}}
-``
+```
 
 Compatibility
 ------------------------------------------------------------------------------
