@@ -40,6 +40,9 @@ Bonus:
 {{/if}}
 ```
 
+\* This addon DON'T modify nodes (including text content), it only remove matched.
+
+
 Stats fom one of my projects (gzipped results):
 
 
